@@ -1,0 +1,223 @@
+[begin] (FluxBox)
+
+    [submenu] (Favourites)
+        [exec] (Waterfox) {/home/hacker097/Downloads/waterfox/waterfox}
+        [exec] (Ternimal) {xfce4-terminal}      
+        [exec] (Task Manager) {xfce4-taskmanager}
+        [exec] (Thunar) {thunar}
+        [exec] (Sublime Text) {subl}
+        [exec] (Zoom) {Zoom}
+    [end]
+    [submenu] (Development)
+        [exec] (GDB) {xterm -e gdb}
+        [exec] (Sublime Text) {/opt/sublime_text/sublime_text}
+        [exec] (Tclsh8.6) {xterm -e tclsh8.6}
+        [exec] (TkWish8.6) {x-terminal-emulator -e /usr/bin/wish8.6}
+    [end]
+    [submenu] (Editors)
+        [exec] (Emacs) {xterm -e emacs}
+        [exec] (Mousepad) {mousepad}
+        [exec] (Nano) {xterm -e nano}
+        [exec] (Neovim) {xterm -e nvim}
+        [exec] (Pico) {xterm -e pico}
+        [exec] (Vi) {xterm -e vi}
+        [exec] (Vim) {xterm -e vim}
+        [exec] (Xedit) {xedit}
+    [end]
+    [submenu] (Games)
+        [submenu] (Amusement)
+            [exec] (Oclock) {oclock}
+            [exec] (Xclock [analog]) {xclock -analog}
+            [exec] (Xclock [digital]) {xclock -digital -update 1}
+            [exec] (Xeyes) {xeyes}
+            [exec] (Xlogo) {xlogo}
+        [end]
+        [submenu] (Puzzle)
+            [exec] (Mines) {gnome-mines}
+            [exec] (SGT Puzzles Collection) {sgt-launcher}
+            [exec] (Sudoku) {gnome-sudoku}
+        [end]
+        [exec] (moon-buggy) {xterm -e moon-buggy}
+        [exec] (Nestopia) {nestopia}
+    [end]
+    [submenu] (Graphics)
+        [exec] (Document Scanner) {simple-scan}
+        [exec] (GNU Image Manipulation Program) {gimp-2.10}
+        [exec] (ImageMagick [color depth=q16]) {display-im6.q16}
+        [exec] (Inkscape) {inkscape}
+        [exec] (nomacs) {nomacs}
+        [exec] (xcb) {xcb}
+        [exec] (Xditview) {xditview}
+    [end]
+    [submenu] (Multimedia)
+        [exec] (ALSA mixer) {xterm -e alsamixer}
+        [exec] (Audacity) {audacity}
+        [exec] (guvcview) {guvcview}
+        [exec] (mpv Media Player) {mpv --player-operation-mode=pseudo-gui}
+        [exec] (Parole Media Player) {parole}
+        [exec] (PulseAudio Volume Control) {pavucontrol}
+        [exec] (QjackCtl) {qjackctl}
+        [exec] (SimpleScreenRecorder) {simplescreenrecorder --logfile}
+        [exec] (VLC media player) {vlc}
+        [exec] (Xfburn) {xfburn}
+    [end]
+    [submenu] (Network)
+        [exec] (Dino) {dino-im}
+        [exec] (Element) {element-desktop}
+        [exec] (FireFox) {firefox}
+        [exec] (FTP) {xterm -e ftp}
+        [exec] (Gajim) {gajim}
+        [exec] (Irssi) {xterm -e irssi}
+        [exec] (KDE Connect) {kdeconnect-app}
+        [exec] (KDE Connect Indicator) {kdeconnect-indicator}
+        [exec] (KDE Connect SMS) {kdeconnect-sms}
+        [exec] (Lynx) {xterm -e lynx}
+        [exec] (Mail Reader) {exo-open --launch MailReader}
+        [exec] (Pidgin Internet Messenger) {pidgin}
+        [exec] (ProtonVPN) {protonvpn}
+        [exec] (Telnet) {xterm -e telnet}
+        [exec] (Transmission) {transmission-gtk}
+        [exec] (W3m) {xterm -e w3m}
+        [exec] (w3m) {xterm -e w3m /usr/share/doc/w3m/MANUAL.html}
+        [exec] (Web Browser) {exo-open --launch WebBrowser}
+        [exec] (Zoom) {zoom}
+    [end]
+    [submenu] (Office)
+        [exec] (Atril Document Viewer) {atril}
+        [exec] (Dictionary) {xfce4-dict}
+        [exec] (FreeOffice 2018 PlanMaker) {planmaker18free}
+        [exec] (FreeOffice 2018 Presentations) {presentations18free}
+        [exec] (FreeOffice 2018 TextMaker) {textmaker18free}
+        [exec] (Xbiff) {xbiff}
+    [end]
+    [submenu] (Other)
+        [exec] (Telnet) {xterm -e telnet.netkit}
+    [end]
+    [submenu] (Shells)
+        [exec] (Bash) {xterm -e bash --login}
+        [exec] (Dash) {xterm -e dash -i}
+        [exec] (fish) {xterm -e fish}
+        [exec] (GIT) {xterm -e git}
+        [exec] (ranger) {xterm -e ranger}
+        [exec] (Sh) {xterm -e sh --login}
+        [exec] (Thunar File Manager) {thunar}
+        [exec] (Tilda) {tilda}
+        [exec] (UXTerm) {uxterm}
+        [exec] (Xfce Terminal) {xfce4-terminal}
+        [exec] (Xterm) {xterm}
+        [exec] (Zsh) {xterm -e zsh}
+    [end]
+    [submenu] (System)
+        [submenu] (Settings)
+            [submenu] (GNOME)
+                [exec] (About Me) {mugshot}
+                [exec] (Advanced Network Configuration) {nm-connection-editor}
+                [exec] (Bluetooth Manager) {blueman-manager}
+                [exec] (Language Support) {gnome-language-selector}
+                [exec] (LightDM GTK+ Greeter settings) {lightdm-gtk-greeter-settings-pkexec}
+                [exec] (Menu Editor) {menulibre}
+                [exec] (Printers) {system-config-printer}
+                [exec] (Software & Updates) {software-properties-gtk}
+                [exec] (Time and Date) {time-admin}
+                [exec] (Users and Groups) {users-admin}
+            [end]
+            [submenu] (Xfce)
+                [exec] (Additional Drivers) {software-properties-gtk --open-tab=4}
+                [exec] (Bluetooth Adapters) {blueman-adapters}
+                [exec] (Panel Profiles) {xfce4-panel-profiles}
+                [exec] (Settings Manager) {xfce4-settings-manager}
+            [end]
+            [exec] (Accessibility) {xfce4-accessibility-settings}
+            [exec] (Appearance) {xfce4-appearance-settings}
+            [exec] (Color Profiles) {xfce4-color-settings}
+            [exec] (Desktop) {xfdesktop-settings}
+            [exec] (Display) {xfce4-display-settings}
+            [exec] (File Manager Settings) {thunar-settings}
+            [exec] (IBus Preferences) {ibus-setup}
+            [exec] (Input Method) {im-config}
+            [exec] (KDE Connect Settings) {kdeconnect-settings}
+            [exec] (Keyboard) {xfce4-keyboard-settings}
+            [exec] (Livepatch) {software-properties-gtk --open-tab=6}
+            [exec] (MIME Type Editor) {xfce4-mime-settings}
+            [exec] (Mouse and Touchpad) {xfce4-mouse-settings}
+            [exec] (Notifications) {xfce4-notifyd-config}
+            [exec] (Onboard Settings) {onboard-settings}
+            [exec] (OpenJDK Java 8 Policy Tool) {policytool}
+            [exec] (Panel) {xfce4-panel --preferences}
+            [exec] (Power Manager) {xfce4-power-manager-settings}
+            [exec] (Preferred Applications) {exo-preferred-applications}
+            [exec] (Qt5 Settings) {qt5ct}
+            [exec] (Removable Drives and Media) {thunar-volman-settings}
+            [exec] (Screensaver) {xfce4-screensaver-preferences}
+            [exec] (Session and Startup) {xfce4-session-settings}
+            [exec] (Settings Editor) {xfce4-settings-editor}
+            [exec] (Software Updater) {update-manager}
+            [exec] (Synaptic Package Manager) {synaptic-pkexec}
+            [exec] (TeXdoctk) {texdoctk}
+            [exec] (Window Manager) {xfwm4-settings}
+            [exec] (Window Manager Tweaks) {xfwm4-tweaks-settings}
+            [exec] (Workspaces) {xfwm4-workspace-settings}
+            [exec] (Xfce Terminal) {xfce4-terminal --preferences}
+            [exec] (Xfontsel) {xfontsel}
+            [exec] (Xvidtune) {xvidtune}
+        [end]
+        [exec] (Bulk Rename) {/usr/lib/x86_64-linux-gnu/Thunar/ThunarBulkRename}
+        [exec] (Editres) {editres}
+        [exec] (Gigolo) {gigolo}
+        [exec] (Htop) {xterm -e htop}
+        [exec] (Log Out) {xfce4-session-logout}
+        [exec] (Logout [obsession]) {obsession-logout}
+        [exec] (Pstree) {xterm -e pstree.x11}
+        [exec] (Synaptic Package Manager) {x-terminal-emulator -e synaptic-pkexec}
+        [exec] (Task Manager) {xfce4-taskmanager}
+        [exec] (Top) {xterm -e top}
+        [exec] (Xclipboard) {xclipboard}
+        [exec] (Xev) {x-terminal-emulator -e xev}
+        [exec] (Xkill) {xkill}
+        [exec] (Xload) {xload}
+        [exec] (Xrefresh) {xrefresh}
+    [end]
+    [submenu] (Utilities)
+        [exec] (About Xfce) {xfce4-about}
+        [exec] (Application Finder) {xfce4-appfinder}
+        [exec] (Bc) {xterm -e bc}
+        [exec] (Byobu Terminal) {xterm -e env TERM=xterm-256color byobu}
+        [exec] (Catfish File Search) {catfish}
+        [exec] (ccal) {xterm -e ccal -p}
+        [exec] (Character Map) {gucharmap}
+        [exec] (CMatrix) {xterm -e cmatrix}
+        [exec] (compton) {compton}
+        [exec] (Engrampa Archive Manager) {engrampa}
+        [exec] (File Manager) {exo-open --launch FileManager}
+        [exec] (Fonts) {gnome-font-viewer}
+        [exec] (Go For It!) {go-for-it}
+        [exec] (Help) {yelp}
+        [exec] (Masari Desktop Wallet) {masari-gui-wallet}
+        [exec] (MATE Calculator) {mate-calc}
+        [exec] (Notes) {xfce4-notes}
+        [exec] (Onboard) {onboard}
+        [exec] (Run Program...) {xfce4-appfinder --collapsed}
+        [exec] (Screenshot) {xfce4-screenshooter}
+        [exec] (Terminal Emulator) {exo-open --launch TerminalEmulator}
+        [exec] (TeXInfo) {xterm -e info}
+        [exec] (WeekToDo) {weektodo}
+        [exec] (Xcalc) {xcalc}
+        [exec] (Xman) {xman}
+    [end]
+    [submenu] (Keyboards)
+        [exec] (us) {setxkbmap us}
+        [exec] (fr) {setxkbmap fr}
+    [end]
+    [separator]
+    [submenu] (FluxBox)
+        [workspaces] (Workspaces)
+        [submenu] (Styles)
+            [stylesdir] (~/.fluxbox/styles)
+        [end]
+        [config] (Configure)
+        [reconfig] (Reconfig)
+        [restart] (Restart)
+        [separator]
+        [exit] (Exit)
+    [end]
+[end]
